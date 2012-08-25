@@ -1,4 +1,15 @@
 var filmroll = document.getElementById('the-film-roll');
+var photos = [
+  "1.jpg",
+  "2.jpg",
+  "3.jpg"
+];
+
+var html = "";
+for (var i = 0; i < photos.length; i++) {
+  html += "<img src=" + photos[i] + ">";
+}
+filmroll.innerHTML = html;
 
 var scrolling = false;
 
