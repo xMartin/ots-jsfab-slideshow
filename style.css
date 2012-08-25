@@ -1,16 +1,16 @@
 .picture-frame {
-  height: 612px; /* height of one image */
-  width: 612px;  /* width of one image */
+  height: 612px; /* Höhe eines einzelnen Bildes */
+  width: 612px;  /* Breite eines einzelnen Bildes */
   overflow: hidden;
   margin: 50px auto;
   position: relative;
 }
 
 .film-roll {
-  width: 1836px; /* 3 times width of one image */
+  width: 1836px; /* Die Breite eines Bildes mal 3 */
   position: absolute;
-  top: 0px;
   left: 0px;
+  top: 0px;
 }
 
 img {
