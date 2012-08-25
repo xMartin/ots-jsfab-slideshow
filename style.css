@@ -1,0 +1,18 @@
+.picture-frame {
+  height: 612px; /* height of one image */
+  width: 612px;  /* width of one image */
+  overflow: hidden;
+  margin: 50px auto;
+  position: relative;
+}
+
+.film-roll {
+  width: 1836px; /* 3 times width of one image */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+img {
+  float: left;
+}
