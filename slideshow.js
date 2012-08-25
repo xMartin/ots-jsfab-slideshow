@@ -1,13 +1,16 @@
 var filmroll = document.getElementById('the-film-roll');
 
+var scrolling = false;
+
 function scroll(start, end) {
   var current = start;
 
-  function move() {
+  var move = function () {
     filmroll.style.left = current + 'px';
 
     if (current == end) {
       clearInterval(loop);
+      scrolling = false;
     }
 
     if (end > start) {
@@ -18,10 +21,13 @@ function scroll(start, end) {
   }
 
   var loop = setInterval(move, 50);
+  scrolling = true;
 }
 
 function handleEvent(e) {
-  backAndForth(e.keyCode);
+  if (!scrolling) {
+    backAndForth(e.keyCode);
+  }
 }
 
 var current = 0;
